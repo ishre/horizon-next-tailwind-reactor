@@ -21,7 +21,6 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    appDir: false,
   },
 };
 

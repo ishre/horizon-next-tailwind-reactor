@@ -1,6 +1,7 @@
-import authImg from '/public/img/auth/auth.png';
+import authImg from '/public/img/dashboards/mcl.jpg';
 import NavLink from 'components/link/NavLink';
 import Footer from 'components/footer/FooterAuthDefault';
+import Image from 'next/image';
 function Default(props: { maincard: JSX.Element }) {
   const { maincard } = props;
   return (
@@ -31,10 +32,14 @@ function Default(props: { maincard: JSX.Element }) {
               className={`absolute flex h-full w-full items-end justify-center bg-gradient-to-br from-brand-400 to-brand-600 bg-cover bg-center lg:rounded-bl-[120px] xl:rounded-bl-[200px]`}
             >
               <div className="relative flex h-full w-full">
-                <div
-                  style={{ backgroundImage: `url(${authImg.src})` }}
+                <Image
+                  width="170"
+                  height="20"
                   className="flex h-full w-full bg-cover"
+                  src={authImg}
+                  alt=""
                 />
+
               </div>
             </div>
           </div>

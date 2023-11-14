@@ -33,7 +33,7 @@ export const SidebarLinks = (props: { routes: RoutesType[] }): JSX.Element => {
               <li
                 className={`my-[7px] flex cursor-pointer items-center px-8
                 ${activeRoute(route.path)===true
-                ?'shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] py-2 rounded-xl mx-3'
+                ?'shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] py-2 rounded-xl'
                 :'shadow-none'}`}
                 key={index}
               >
@@ -41,7 +41,7 @@ export const SidebarLinks = (props: { routes: RoutesType[] }): JSX.Element => {
                   className={`${
                     activeRoute(route.path) === true
                       ? 'font-bold text-brand-100 dark:text-brand-100'
-                      : 'font-medium text-gray-900'
+                      : 'font-medium text-[black]'
                   }`}
                 >
                   {route.icon ? route.icon : <DashIcon />}{' '}
@@ -49,8 +49,8 @@ export const SidebarLinks = (props: { routes: RoutesType[] }): JSX.Element => {
                 <p
                   className={`leading-1 ml-4 flex text-xl  ${
                     activeRoute(route.path) === true
-                      ? 'font-bold text-navy-700 dark:text-gray-100'
-                      : 'font-medium text-gray-900'
+                      ? 'font-bold text-brand-100 dark:text-gray-100'
+                      : 'font-medium text-[black]'
                   }`}
                 >
                   {route.name}

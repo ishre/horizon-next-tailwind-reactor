@@ -29,9 +29,7 @@ const FreeCard = () => {
       <div className="mt-16 flex h-fit flex-col items-center">
         <p className="text-lg font-bold text-white">Shreyash Dubey</p>
         <p className="mt-1 px-4 text-center text-sm text-white">
-          I am a developer that is aimed at creating highly efficient user-facing systems via modified approach and MVC model.
-          I am a developer that is aimed at creating highly efficient user-facing systems via modified approach and MVC model.
-          I am a developer that is aimed at creating highly efficient user-facing systems via modified approach and MVC model.
+         I am a developer that is aimed at creating highly efficient user-facing systems via modified approach and MVC model.
           I am a developer that is aimed at creating highly efficient user-facing systems via modified approach and MVC model.
         </p>
 

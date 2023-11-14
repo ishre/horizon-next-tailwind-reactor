@@ -5,31 +5,32 @@ import React from 'react';
 // Icon Imports
 import {
   MdHome,
-  MdOutlineShoppingCart,
-  MdBarChart,
+  MdEvent,
   MdPerson,
-  MdLock,
+  MdEventAvailable,
 } from 'react-icons/md';
+
+import { IoLogOut } from "react-icons/io5";
 
 const routes = [
   {
-    name: 'Main Dashboard',
+    name: 'Dashboard Home',
     layout: '/admin',
-    path: 'default',
+    path: '/home',
     icon: <MdHome className="h-6 w-6" />,
   },
   {
-    name: 'NFT Marketplace',
+    name: 'Registered Events',
     layout: '/admin',
     path: 'nft-marketplace',
-    icon: <MdOutlineShoppingCart className="h-6 w-6" />,
+    icon: <MdEventAvailable className="h-6 w-6" />,
 
     secondary: true,
   },
   {
-    name: 'Data Tables',
+    name: 'Upcoming Events',
     layout: '/admin',
-    icon: <MdBarChart className="h-6 w-6" />,
+    icon: <MdEvent className="h-6 w-6" />,
     path: 'data-tables',
   },
   {
@@ -39,16 +40,10 @@ const routes = [
     icon: <MdPerson className="h-6 w-6" />,
   },
   {
-    name: 'Sign In',
+    name: 'Logout',
     layout: '/auth',
     path: 'sign-in',
-    icon: <MdLock className="h-6 w-6" />,
-  },
-  {
-    name: 'RTL Admin',
-    layout: '/rtl',
-    path: 'rtl-default',
-    icon: <MdHome className="h-6 w-6" />,
+    icon: <IoLogOut className="h-6 w-6" />,
   },
 ];
 export default routes;
